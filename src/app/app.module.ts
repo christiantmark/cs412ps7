@@ -15,4 +15,10 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent]
 })
+
+this.http.get('assets/angular.json').subscript((date: any[]) => {
+  console.log(data);
+  this.items = data;
+});
+
 export class AppModule { }
